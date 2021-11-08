@@ -52,8 +52,14 @@
 					<input type='text/email' placeholder='Username or Email Address' name='username' required/>
 					<label class="lab" >Password</label>
 					<input type='password' placeholder='Password' name="password" required/>
-					<button type='submit'>Login</button>
+					<button class="button" type='submit'>Login</button>
+					
 				</form>
+				<div class="row form-group">
+                        		<div class="col-md-12">
+                           			 <a id ="forget_pass" href="{% url 'pass_reset' %}">Forgot your password?</a>
+                        		</div>
+                   		 </div>
 				<div class="contact-us-footer">
 					<p>
 						Don't have account? <a href="{% url 'login' %}">Signup Here</a>
